@@ -5,8 +5,8 @@
 const solution = (word) => {
   const len = word.length
   if (len % 2 === 0) {
-    const mid = Math.round(len / 2)
-    return word[Math.round(len / 2)] + word[mid - 1]
+    const mid = Math.floor(len / 2)
+    return word[mid - 1] + word[mid]
   }
   return word[Math.floor(len / 2)]
 }
